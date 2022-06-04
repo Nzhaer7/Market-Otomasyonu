@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1972
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketOtomasyonu", "MarketOtomasyonu\MarketOtomasyonu.csproj", "{F09D9803-5017-4099-80E5-2ED59E8621DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F09D9803-5017-4099-80E5-2ED59E8621DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F09D9803-5017-4099-80E5-2ED59E8621DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F09D9803-5017-4099-80E5-2ED59E8621DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F09D9803-5017-4099-80E5-2ED59E8621DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0487FDA-2498-4D8F-B46E-02624C3B490D}
+	EndGlobalSection
+EndGlobal
