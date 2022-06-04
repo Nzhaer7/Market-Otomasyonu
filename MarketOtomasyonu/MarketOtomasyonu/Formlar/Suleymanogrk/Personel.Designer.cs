@@ -108,6 +108,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Personel";
             this.Text = "Personel";
+            this.Load += new System.EventHandler(this.Personel_Load);
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 

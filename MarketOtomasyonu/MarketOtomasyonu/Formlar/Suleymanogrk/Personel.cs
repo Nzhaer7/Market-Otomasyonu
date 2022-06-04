@@ -16,5 +16,10 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             InitializeComponent();
         }
+
+        private void Personel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
