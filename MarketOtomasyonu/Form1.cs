@@ -15,6 +15,7 @@ namespace MarketOtomasyonu
         public Form1()
         {
             InitializeComponent();
+            MessageBox("Fuck You");
         }
     }
 }
