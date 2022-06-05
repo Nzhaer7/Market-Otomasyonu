@@ -52,6 +52,12 @@
     <Compile Include="Formlar\besir\kaydol.Designer.cs">
       <DependentUpon>kaydol.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\besir\mudur_kaydol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\besir\mudur_kaydol.Designer.cs">
+      <DependentUpon>mudur_kaydol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\kamiltrn\Mudur_Anasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formlar\besir\kaydol.resx">
       <DependentUpon>kaydol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\besir\mudur_kaydol.resx">
+      <DependentUpon>mudur_kaydol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\kamiltrn\Mudur_Anasayfa.resx">
       <DependentUpon>Mudur_Anasayfa.cs</DependentUpon>
