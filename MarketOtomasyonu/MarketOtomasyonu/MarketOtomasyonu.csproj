@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formlar\besir\kaydol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\besir\kaydol.Designer.cs">
+      <DependentUpon>kaydol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\kamiltrn\Mudur_Anasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formlar\besir\kaydol.resx">
+      <DependentUpon>kaydol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\kamiltrn\Mudur_Anasayfa.resx">
       <DependentUpon>Mudur_Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,8 +106,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formlar\besir\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
