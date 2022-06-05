@@ -87,7 +87,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(992, 531);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Personel Giriş/Çıkış";
+            this.tabPage3.Text = "Gelir/Gider/Ciro Takip";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
@@ -121,7 +121,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView2.Location = new System.Drawing.Point(-1, 0);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(990, 455);
