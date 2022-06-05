@@ -16,8 +16,9 @@ namespace MarketOtomasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Formlar.Suleymanogrk.Personel());
-            //Application.Run(new Formlar.kamiltrn.Mudur_Anasayfa());
+			Application.Run(new Formlar.Suleymanogrk.Personel());
+			//Application.Run(new Formlar.kamiltrn.Mudur_Anasayfa());
+			//Application.Run(new Formlar.besir.mudur_kaydol());
         }
     }
 }
