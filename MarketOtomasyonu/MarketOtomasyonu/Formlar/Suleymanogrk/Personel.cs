@@ -38,5 +38,10 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             Formlar.Suleymanogrk.Personel_cıkıs personel_cikis = new Personel_cıkıs();
             personel_cikis.Show();
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
