@@ -21,5 +21,10 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
