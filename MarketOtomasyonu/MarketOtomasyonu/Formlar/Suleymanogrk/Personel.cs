@@ -26,5 +26,11 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Formlar.Suleymanogrk.Personel_Giris_Ekle personel_giris = new Personel_Giris_Ekle();
+            personel_giris.Show();
+        }
     }
 }
