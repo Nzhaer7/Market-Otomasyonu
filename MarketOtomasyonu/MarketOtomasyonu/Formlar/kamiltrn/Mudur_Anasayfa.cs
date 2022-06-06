@@ -16,5 +16,10 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
         {
             InitializeComponent();
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Formlar.kamiltrn.Malzeme_Guncelleme guncelle_ekle = new Malzeme_Guncelleme();
+           guncelle_ekle.Show();
+        }
     }
 }

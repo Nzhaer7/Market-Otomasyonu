@@ -58,6 +58,12 @@
     <Compile Include="Formlar\besir\mudur_kaydol.Designer.cs">
       <DependentUpon>mudur_kaydol.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\kamiltrn\Malzeme_Guncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\kamiltrn\Malzeme_Guncelleme.Designer.cs">
+      <DependentUpon>Malzeme_Guncelleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\kamiltrn\Mudur_Anasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\besir\mudur_kaydol.resx">
       <DependentUpon>mudur_kaydol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\kamiltrn\Malzeme_Guncelleme.resx">
+      <DependentUpon>Malzeme_Guncelleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\kamiltrn\Mudur_Anasayfa.resx">
       <DependentUpon>Mudur_Anasayfa.cs</DependentUpon>
