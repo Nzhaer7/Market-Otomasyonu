@@ -19,7 +19,7 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
 
         private void Personel_urun_guncelle_Load(object sender, EventArgs e)
         {
-            
+            tabControl1.SelectedIndex = 1;
         }
     }
 }
