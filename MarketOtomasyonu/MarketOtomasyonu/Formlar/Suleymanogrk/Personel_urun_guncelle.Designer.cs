@@ -34,6 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -138,6 +138,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ürün Girdi/Çıktı";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.Location = new System.Drawing.Point(885, 373);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(66, 29);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Ürün Sil";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -288,16 +298,6 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Arıza Bildirim";
             this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(885, 373);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(66, 29);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Ürün Sil";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // Personel_urun_guncelle
             // 
