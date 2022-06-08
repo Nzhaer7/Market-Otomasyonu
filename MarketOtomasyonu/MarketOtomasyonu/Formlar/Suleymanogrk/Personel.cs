@@ -61,5 +61,10 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             Formlar.Suleymanogrk.Personel_urun_guncelle personel_Urun_Guncelle = new Personel_urun_guncelle();
             personel_Urun_Guncelle.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+ 
+        }
     }
 }
