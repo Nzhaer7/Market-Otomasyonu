@@ -19,7 +19,14 @@ namespace MarketOtomasyonu.Formlar.besir
 
 		private void button1_Click(object sender, EventArgs e)
 		{
+			Formlar.besir.mudur_kaydol mudur_Kaydol = new mudur_kaydol();
+			mudur_Kaydol.Show();	
+				}
 
+		private void button2_Click(object sender, EventArgs e)
+		{
+			Formlar.besir.PersonelKayitOl personel_Kaydol = new PersonelKayitOl();
+			personel_Kaydol.Show();
 		}
 	}
 }
