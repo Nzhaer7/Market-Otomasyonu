@@ -192,6 +192,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Personel_gun_sonu_kasa_ozeti";
             this.Text = "Personel_gun_sonu_kasa_ozeti";
+            this.Load += new System.EventHandler(this.Personel_gun_sonu_kasa_ozeti_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

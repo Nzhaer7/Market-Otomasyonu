@@ -64,7 +64,8 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
 
         private void button5_Click(object sender, EventArgs e)
         {
- 
+            Formlar.Suleymanogrk.Personel_gun_sonu_kasa_ozeti personel_Gun_Sonu_Kasa_Ozeti = new Personel_gun_sonu_kasa_ozeti();
+            personel_Gun_Sonu_Kasa_Ozeti.Show();
         }
     }
 }
