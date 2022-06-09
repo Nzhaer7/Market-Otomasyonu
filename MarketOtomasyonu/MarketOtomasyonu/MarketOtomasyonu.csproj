@@ -100,6 +100,12 @@
     <Compile Include="Formlar\Suleymanogrk\Personel_gun_sonu_kasa_ozeti.Designer.cs">
       <DependentUpon>Personel_gun_sonu_kasa_ozeti.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_gun_sonu_urun_ozeti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_gun_sonu_urun_ozeti.Designer.cs">
+      <DependentUpon>Personel_gun_sonu_urun_ozeti.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Suleymanogrk\Personel_urun_ekle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_gun_sonu_kasa_ozeti.resx">
       <DependentUpon>Personel_gun_sonu_kasa_ozeti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_gun_sonu_urun_ozeti.resx">
+      <DependentUpon>Personel_gun_sonu_urun_ozeti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_urun_ekle.resx">
       <DependentUpon>Personel_urun_ekle.cs</DependentUpon>
