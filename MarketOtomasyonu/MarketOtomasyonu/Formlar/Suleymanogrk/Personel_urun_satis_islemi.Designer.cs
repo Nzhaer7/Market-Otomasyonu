@@ -233,6 +233,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Ürün Ekle";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -243,6 +244,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "Ürün İptal";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -253,6 +255,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Satış";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Personel_urun_satis_islemi
             // 
@@ -262,6 +265,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Personel_urun_satis_islemi";
             this.Text = "Personel_urun_satis_islemi";
+            this.Load += new System.EventHandler(this.Personel_urun_satis_islemi_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

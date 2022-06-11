@@ -16,5 +16,15 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             InitializeComponent();
         }
+
+        private void Personel_sepet_urun_ekle_Load(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

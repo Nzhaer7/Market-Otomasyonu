@@ -16,5 +16,16 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             InitializeComponent();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Formlar.Suleymanogrk.Personel_fis personel_Fis = new Personel_fis();
+            personel_Fis.Show();
+        }
+
+        private void Personel_urun_sepet_odeme_Load(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2;
+        }
     }
 }

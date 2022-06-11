@@ -207,6 +207,7 @@
             this.button6.TabIndex = 11;
             this.button6.Text = "Onay";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // textBox1
             // 
@@ -281,6 +282,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Personel_urun_sepet_odeme";
             this.Text = "Personel_urun_sepet_odeme";
+            this.Load += new System.EventHandler(this.Personel_urun_sepet_odeme_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

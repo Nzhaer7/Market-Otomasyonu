@@ -21,5 +21,10 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
 
         }
+
+        private void Personel_urun_iptal_Load(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2;
+        }
     }
 }
