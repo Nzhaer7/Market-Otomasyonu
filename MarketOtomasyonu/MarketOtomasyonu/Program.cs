@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MarketOtomasyonu.Data;
 
 namespace MarketOtomasyonu
 {
@@ -14,11 +15,15 @@ namespace MarketOtomasyonu
         [STAThread]
         static void Main()
         {
+			
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Formlar.Suleymanogrk.Personel());
+			MOContext MODB = new MOContext();
+			MODB.Database.EnsureDeleted();
+			MODB.Database.EnsureCreated();
+			//Application.Run(new Formlar.Suleymanogrk.Personel());
 			//Application.Run(new Formlar.kamiltrn.Mudur_Anasayfa());
-			//Application.Run(new Formlar.besir.kaydol());
+			Application.Run(new Formlar.besir.kaydol());
         }
     }
 }
