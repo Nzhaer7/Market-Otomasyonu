@@ -388,6 +388,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Personel_indirimli_urunler";
             this.Text = "Personel_indirimli_urunler";
+            this.Load += new System.EventHandler(this.Personel_indirimli_urunler_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

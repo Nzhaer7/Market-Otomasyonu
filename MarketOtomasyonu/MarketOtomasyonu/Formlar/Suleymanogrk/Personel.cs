@@ -79,5 +79,11 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             Formlar.Suleymanogrk.Personel_urun_satis_islemi personel_Urun_Satis_İslemi = new Personel_urun_satis_islemi();
             personel_Urun_Satis_İslemi.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Formlar.Suleymanogrk.Personel_indirimli_urunler personel_İndirimli_Urunler = new Personel_indirimli_urunler();
+            personel_İndirimli_Urunler.Show();
+        }
     }
 }
