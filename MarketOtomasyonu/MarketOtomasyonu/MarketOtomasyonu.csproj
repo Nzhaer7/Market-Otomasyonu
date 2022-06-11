@@ -162,6 +162,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\PersonelDb.cs" />
     <Compile Include="Classes\UrunDb.cs" />
     <Compile Include="Data\MOContext.cs" />
     <Compile Include="Formlar\besir\kaydol.cs">

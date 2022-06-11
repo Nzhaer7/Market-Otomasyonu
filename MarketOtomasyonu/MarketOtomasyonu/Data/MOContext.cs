@@ -22,7 +22,8 @@ namespace MarketOtomasyonu.Data
 			optionsBuilder.UseSqlServer(@"Data Source=.; Database=MODataBase; Integrated Security=yes");
 		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
-		{
+		{	
+			/*urun tablosu olusturulması */
 
 			modelBuilder.Entity<UrunDb>().Property(Urun => Urun.adi)
 											  .HasColumnName("Adı")
@@ -51,10 +52,41 @@ namespace MarketOtomasyonu.Data
 										 .HasMaxLength(30);
 
 
+			/*personel tablosu olusturulması */
+
+
+			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.adi)
+											  .HasColumnName("Adı")
+											  .IsRequired()
+											  .HasMaxLength(30);
+			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.girisTarihi)
+											  .HasColumnName("Giriş Tarihi")
+											  .IsRequired();
+			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.cikisTarihi)
+											  .HasColumnName("Çıkış Tarihi")
+											  .IsRequired();
+			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.maas)
+											 .HasColumnName("Maaş")
+									         .IsRequired()
+									         .HasMaxLength(30);
+			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.gorev)
+											 .HasColumnName("Görevi")
+											 .IsRequired()
+											 .HasMaxLength(30);
+			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.durumu)
+											.HasColumnName("izin Durumu")
+										    .IsRequired()
+										    .HasMaxLength(30);
+			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.girisid)
+											.HasColumnName("Kullanıcı adı")
+											.IsRequired()
+											.HasMaxLength(30);
 
 
 
-		
+
+
+
 		}
 	}
 }
