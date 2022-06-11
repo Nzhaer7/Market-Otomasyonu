@@ -88,6 +88,12 @@
     <Compile Include="Formlar\Suleymanogrk\Personel_cıkıs.Designer.cs">
       <DependentUpon>Personel_cıkıs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_fis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_fis.Designer.cs">
+      <DependentUpon>Personel_fis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Suleymanogrk\Personel_Giris_Ekle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,18 @@
     <Compile Include="Formlar\Suleymanogrk\Personel_gun_sonu_urun_ozeti.Designer.cs">
       <DependentUpon>Personel_gun_sonu_urun_ozeti.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_sepet_urun_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_sepet_urun_ekle.Designer.cs">
+      <DependentUpon>Personel_sepet_urun_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_sepet_urun_sil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_sepet_urun_sil.Designer.cs">
+      <DependentUpon>Personel_sepet_urun_sil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Suleymanogrk\Personel_urun_ekle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +135,24 @@
     </Compile>
     <Compile Include="Formlar\Suleymanogrk\Personel_urun_guncelle.Designer.cs">
       <DependentUpon>Personel_urun_guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_urun_iptal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_urun_iptal.Designer.cs">
+      <DependentUpon>Personel_urun_iptal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_urun_satis_islemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_urun_satis_islemi.Designer.cs">
+      <DependentUpon>Personel_urun_satis_islemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_urun_sepet_odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_urun_sepet_odeme.Designer.cs">
+      <DependentUpon>Personel_urun_sepet_odeme.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,6 +177,9 @@
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_cıkıs.resx">
       <DependentUpon>Personel_cıkıs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_fis.resx">
+      <DependentUpon>Personel_fis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_Giris_Ekle.resx">
       <DependentUpon>Personel_Giris_Ekle.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,11 +189,26 @@
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_gun_sonu_urun_ozeti.resx">
       <DependentUpon>Personel_gun_sonu_urun_ozeti.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_sepet_urun_ekle.resx">
+      <DependentUpon>Personel_sepet_urun_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_sepet_urun_sil.resx">
+      <DependentUpon>Personel_sepet_urun_sil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_urun_ekle.resx">
       <DependentUpon>Personel_urun_ekle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_urun_guncelle.resx">
       <DependentUpon>Personel_urun_guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_urun_iptal.resx">
+      <DependentUpon>Personel_urun_iptal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_urun_satis_islemi.resx">
+      <DependentUpon>Personel_urun_satis_islemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_urun_sepet_odeme.resx">
+      <DependentUpon>Personel_urun_sepet_odeme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
