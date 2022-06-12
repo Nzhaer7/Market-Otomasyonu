@@ -22,5 +22,11 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
             Formlar.besir.kaydol Kayıt = new besir.kaydol();
             Kayıt.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Formlar.kamiltrn.Müdür_Giris MüdürGiris = new Müdür_Giris();
+            MüdürGiris.Show();
+        }
     }
 }

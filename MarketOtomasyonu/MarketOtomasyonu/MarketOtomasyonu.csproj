@@ -202,6 +202,12 @@
     <Compile Include="Formlar\kamiltrn\Mudur_Anasayfa.Designer.cs">
       <DependentUpon>Mudur_Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\kamiltrn\Müdür_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\kamiltrn\Müdür_Giris.Designer.cs">
+      <DependentUpon>Müdür_Giris.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Suleymanogrk\Personel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\kamiltrn\Mudur_Anasayfa.resx">
       <DependentUpon>Mudur_Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\kamiltrn\Müdür_Giris.resx">
+      <DependentUpon>Müdür_Giris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel.resx">
       <DependentUpon>Personel.cs</DependentUpon>
