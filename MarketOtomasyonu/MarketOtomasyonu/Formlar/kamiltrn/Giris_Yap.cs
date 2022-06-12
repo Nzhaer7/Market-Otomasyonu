@@ -28,5 +28,9 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
             Formlar.kamiltrn.Müdür_Giris MüdürGiris = new Müdür_Giris();
             MüdürGiris.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
