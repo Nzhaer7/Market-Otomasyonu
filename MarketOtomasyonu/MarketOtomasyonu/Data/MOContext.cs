@@ -11,6 +11,9 @@ namespace MarketOtomasyonu.Data
 	public class MOContext : DbContext
 	{
 		public DbSet<UrunDb> Urunler { get; set; }
+		public DbSet<PersonelDb> Personeller { get; set; }
+		public DbSet<malzemeDb> Malzemeler { get; set; }
+
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
@@ -97,12 +100,43 @@ namespace MarketOtomasyonu.Data
 											.HasColumnName("Bildiren Personel :")
 											.IsRequired()
 											.HasMaxLength(30);
-			/**/
+
+			/*musteri sepet oluşturulması*/
 
 
+			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.adedi)
+											.HasColumnName("Ürün Adedi :")
+											.IsRequired();
+											
+			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.adi)
+											.HasColumnName("Ürün Adı :")
+											.IsRequired()
+											.HasMaxLength(30);
+			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.fiyat)
+										.HasColumnName("Ürün fiyatı :")
+										.IsRequired()
+										.HasMaxLength(30);
+			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.toplam)
+										.HasColumnName("Sepet Toplam   :")
+										.IsRequired();
 
 
+			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.giderid)
+										.HasColumnName("Gider id :")
+										.IsRequired();
 
+			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.gelirid)
+										.HasColumnName("Gelir id :")
+										.IsRequired();
+
+			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.urunid)
+										.HasColumnName("Ürün id :")
+										.IsRequired();
+
+			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.urunKodu)
+										.HasColumnName("Ürün Kodu :")
+										.IsRequired()
+										.HasMaxLength(30);
 
 		}
 	}

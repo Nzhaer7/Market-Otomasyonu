@@ -163,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\malzemeDb.cs" />
+    <Compile Include="Classes\musteriSepetDb.cs" />
     <Compile Include="Classes\PersonelDb.cs" />
     <Compile Include="Classes\UrunDb.cs" />
     <Compile Include="Data\MOContext.cs" />
