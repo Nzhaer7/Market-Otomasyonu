@@ -39,5 +39,11 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             Formlar.Suleymanogrk.Personel_urun_iptal personel_Urun_İptal = new Personel_urun_iptal();
             personel_Urun_İptal.Show();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Formlar.Suleymanogrk.Personel_indirime_girecek_urunler personel_İndirime_Girecek_Urunler = new Personel_indirime_girecek_urunler();
+            personel_İndirime_Girecek_Urunler.Show();
+        }
     }
 }

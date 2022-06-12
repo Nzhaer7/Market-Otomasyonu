@@ -16,5 +16,11 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             InitializeComponent();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Formlar.Suleymanogrk.Personel_indirime_girecek_urunler personel_İndirime_Girecek_Urunler = new Personel_indirime_girecek_urunler();
+            personel_İndirime_Girecek_Urunler.Show();
+        }
     }
 }
