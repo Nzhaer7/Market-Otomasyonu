@@ -184,6 +184,12 @@
     <Compile Include="Formlar\besir\PersonelKayitOl.Designer.cs">
       <DependentUpon>PersonelKayitOl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\kamiltrn\Giris_Yap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\kamiltrn\Giris_Yap.Designer.cs">
+      <DependentUpon>Giris_Yap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\kamiltrn\Malzeme_Guncelleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\besir\PersonelKayitOl.resx">
       <DependentUpon>PersonelKayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\kamiltrn\Giris_Yap.resx">
+      <DependentUpon>Giris_Yap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\kamiltrn\Malzeme_Guncelleme.resx">
       <DependentUpon>Malzeme_Guncelleme.cs</DependentUpon>
