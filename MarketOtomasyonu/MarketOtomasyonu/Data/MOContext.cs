@@ -78,6 +78,28 @@ namespace MarketOtomasyonu.Data
 											.HasMaxLength(30);
 
 
+			/*malzeme tablosu olusturulması */
+
+
+			modelBuilder.Entity<malzemeDb>().Property(malzeme => malzeme.durumu)
+											.HasColumnName("Malzeme Durumu")
+											.IsRequired()
+											.HasMaxLength(30);
+			modelBuilder.Entity<malzemeDb>().Property(malzeme => malzeme.turu)
+											.HasColumnName("Malzeme turu")
+											.IsRequired()
+											.HasMaxLength(30);
+			modelBuilder.Entity<malzemeDb>().Property(malzeme => malzeme.adedi)
+											.HasColumnName("Malzeme Adedi")
+											.IsRequired()
+											.HasMaxLength(30);
+			modelBuilder.Entity<malzemeDb>().Property(malzeme => malzeme.personelid)
+											.HasColumnName("Bildiren Personel :")
+											.IsRequired()
+											.HasMaxLength(30);
+			/**/
+
+
 
 
 
