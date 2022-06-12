@@ -263,6 +263,12 @@
     <Compile Include="Formlar\Suleymanogrk\Personel_indirimli_urunler.Designer.cs">
       <DependentUpon>Personel_indirimli_urunler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_markete_gelecek_urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_markete_gelecek_urunler.Designer.cs">
+      <DependentUpon>Personel_markete_gelecek_urunler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Suleymanogrk\Personel_sepet_urun_ekle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,6 +354,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_indirimli_urunler.resx">
       <DependentUpon>Personel_indirimli_urunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_markete_gelecek_urunler.resx">
+      <DependentUpon>Personel_markete_gelecek_urunler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_sepet_urun_ekle.resx">
       <DependentUpon>Personel_sepet_urun_ekle.cs</DependentUpon>
