@@ -251,6 +251,12 @@
     <Compile Include="Formlar\Suleymanogrk\Personel_gun_sonu_urun_ozeti.Designer.cs">
       <DependentUpon>Personel_gun_sonu_urun_ozeti.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_indirime_girecek_urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_indirime_girecek_urunler.Designer.cs">
+      <DependentUpon>Personel_indirime_girecek_urunler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Suleymanogrk\Personel_indirimli_urunler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -336,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_gun_sonu_urun_ozeti.resx">
       <DependentUpon>Personel_gun_sonu_urun_ozeti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_indirime_girecek_urunler.resx">
+      <DependentUpon>Personel_indirime_girecek_urunler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_indirimli_urunler.resx">
       <DependentUpon>Personel_indirimli_urunler.cs</DependentUpon>

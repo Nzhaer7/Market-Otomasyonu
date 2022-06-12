@@ -120,7 +120,6 @@ namespace MarketOtomasyonu.Data
 										.HasColumnName("Sepet Toplam   :")
 										.IsRequired();
 
-
 			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.giderid)
 										.HasColumnName("Gider id :")
 										.IsRequired();
