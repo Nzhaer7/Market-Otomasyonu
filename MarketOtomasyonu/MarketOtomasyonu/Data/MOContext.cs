@@ -49,6 +49,11 @@ namespace MarketOtomasyonu.Data
 										 .IsRequired()
 										 .HasMaxLength(30);
 
+			DateTime dt = new DateTime(2022, 06, 10);
+
+			modelBuilder.Entity<UrunDb>().HasData(new UrunDb { id = 1, adi = "besir", girisTarihi = dt, cikisTarihi = dt, kodu = "1500abc", sonKullanimTarihi = dt, fiyat =14.50f, durumu = 1 });
+			
+
 
 			/*personel tablosu olusturulması */
 
@@ -80,7 +85,7 @@ namespace MarketOtomasyonu.Data
 											.IsRequired()
 											.HasMaxLength(30);
 
-
+			modelBuilder.Entity<PersonelDb>().HasData(new PersonelDb { id = 1, adi = "kamil", girisTarihi = dt, cikisTarihi = dt, maas = 2750.75f, gorev = "kasiyer", girisid = "kartal123", durumu = "izinli" });
 			/*malzeme tablosu olusturulması */
 
 
@@ -100,6 +105,8 @@ namespace MarketOtomasyonu.Data
 											.HasColumnName("Bildiren Personel :")
 											.IsRequired()
 											.HasMaxLength(30);
+
+			modelBuilder.Entity<malzemeDb>().HasData(new malzemeDb { id = 1, durumu = "sağlam", turu = "dolap", adedi = 5, personelid="feyyaz" });
 
 			/*musteri sepet oluşturulması*/
 
@@ -136,6 +143,8 @@ namespace MarketOtomasyonu.Data
 										.HasColumnName("Ürün Kodu :")
 										.IsRequired()
 										.HasMaxLength(30);
+
+			modelBuilder.Entity<musteriSepetDb>().HasData(new musteriSepetDb { id = 1, adedi = 5, adi = "goflet", fiyat = 2.75f,giderid="asas",gelirid="safas",urunid="atıştırmalık" ,urunKodu="356asd"});
 
 		}
 	}
