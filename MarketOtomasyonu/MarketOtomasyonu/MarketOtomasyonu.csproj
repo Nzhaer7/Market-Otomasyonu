@@ -221,6 +221,12 @@
     <Compile Include="Formlar\kamiltrn\Şifre_unuttum_sayfası.Designer.cs">
       <DependentUpon>Şifre_unuttum_sayfası.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Persoenl_yeni_urunler_sayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Persoenl_yeni_urunler_sayfası.Designer.cs">
+      <DependentUpon>Persoenl_yeni_urunler_sayfası.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Suleymanogrk\Personel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\kamiltrn\Şifre_unuttum_sayfası.resx">
       <DependentUpon>Şifre_unuttum_sayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Persoenl_yeni_urunler_sayfası.resx">
+      <DependentUpon>Persoenl_yeni_urunler_sayfası.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel.resx">
       <DependentUpon>Personel.cs</DependentUpon>
