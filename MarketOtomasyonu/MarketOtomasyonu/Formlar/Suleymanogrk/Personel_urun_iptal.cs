@@ -38,5 +38,11 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             Formlar.Suleymanogrk.Personel_markete_gelecek_urunler personel_Markete_Gelecek_Urunler = new Personel_markete_gelecek_urunler();
             personel_Markete_Gelecek_Urunler.Show();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Formlar.Suleymanogrk.Persoenl_yeni_urunler_sayfası persoenl_Yeni_Urunler_Sayfası = new Persoenl_yeni_urunler_sayfası();
+            persoenl_Yeni_Urunler_Sayfası.Show();
+        }
     }
 }

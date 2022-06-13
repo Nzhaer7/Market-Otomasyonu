@@ -19,7 +19,7 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
 
         private void Persoenl_yeni_urunler_sayfası_Load(object sender, EventArgs e)
         {
-
+            tabControl1.SelectedIndex = 3;
         }
     }
 }
