@@ -21,5 +21,11 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Formlar.kamiltrn.Şifre_unuttum_sayfası sifredegis2 = new Şifre_unuttum_sayfası();
+            sifredegis2.Show();
+        }
     }
 }
