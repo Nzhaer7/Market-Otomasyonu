@@ -31,6 +31,8 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Formlar.kamiltrn.Personel_giris personelgiris = new Personel_giris();
+            personelgiris.Show();
         }
     }
 }
