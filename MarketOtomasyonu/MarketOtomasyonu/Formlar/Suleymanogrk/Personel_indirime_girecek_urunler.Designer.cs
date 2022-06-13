@@ -54,7 +54,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -65,8 +66,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -76,6 +79,7 @@
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -352,15 +356,22 @@
             this.tabPage4.Text = "Duyuru";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
+            // textBox10
             // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1002, 561);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Arıza Bildirim";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.textBox10.Location = new System.Drawing.Point(770, 432);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(160, 20);
+            this.textBox10.TabIndex = 21;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(808, 398);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(84, 16);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "İndirim Tarihi";
             // 
             // button8
             // 
@@ -448,22 +459,48 @@
             this.dataGridView4.Size = new System.Drawing.Size(696, 549);
             this.dataGridView4.TabIndex = 10;
             // 
-            // label11
+            // tabPage5
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(808, 398);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(84, 16);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "İndirim Tarihi";
+            this.tabPage5.Controls.Add(this.button12);
+            this.tabPage5.Controls.Add(this.button13);
+            this.tabPage5.Controls.Add(this.button14);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1002, 561);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Arıza Bildirim";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // textBox10
+            // button12
             // 
-            this.textBox10.Location = new System.Drawing.Point(770, 432);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(160, 20);
-            this.textBox10.TabIndex = 21;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button12.Location = new System.Drawing.Point(640, 216);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(201, 128);
+            this.button12.TabIndex = 8;
+            this.button12.Text = "Arıza Maliyet";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button13.Location = new System.Drawing.Point(400, 216);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(201, 128);
+            this.button13.TabIndex = 7;
+            this.button13.Text = "Arıza Giderildi";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button14.Location = new System.Drawing.Point(162, 216);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(201, 128);
+            this.button14.TabIndex = 6;
+            this.button14.Text = "Arıza Bildirim";
+            this.button14.UseVisualStyleBackColor = true;
             // 
             // Personel_indirime_girecek_urunler
             // 
@@ -485,6 +522,7 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.tabPage5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -530,5 +568,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
     }
 }
