@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace MarketOtomasyonu.Formlar.kamiltrn
 {
-    public partial class Personel_giris : Form
+    public partial class Şifre_unuttum_sayfası : Form
     {
-        public Personel_giris()
+        public Şifre_unuttum_sayfası()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
