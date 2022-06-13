@@ -103,5 +103,10 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             Formlar.Suleymanogrk.Persoenl_yeni_urunler_sayfası persoenl_Yeni_Urunler_Sayfası = new Persoenl_yeni_urunler_sayfası();
             persoenl_Yeni_Urunler_Sayfası.Show();
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

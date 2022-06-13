@@ -233,6 +233,12 @@
     <Compile Include="Formlar\Suleymanogrk\Personel.Designer.cs">
       <DependentUpon>Personel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_arıza_bildirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_arıza_bildirm.Designer.cs">
+      <DependentUpon>Personel_arıza_bildirm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Suleymanogrk\Personel_cıkıs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel.resx">
       <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_arıza_bildirm.resx">
+      <DependentUpon>Personel_arıza_bildirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_cıkıs.resx">
       <DependentUpon>Personel_cıkıs.cs</DependentUpon>
