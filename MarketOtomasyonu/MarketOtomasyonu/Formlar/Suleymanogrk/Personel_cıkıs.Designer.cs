@@ -337,6 +337,7 @@
             this.button14.TabIndex = 6;
             this.button14.Text = "Arıza Bildirim";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // Personel_cıkıs
             // 

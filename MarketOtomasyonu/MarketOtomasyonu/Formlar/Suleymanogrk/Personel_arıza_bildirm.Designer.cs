@@ -416,6 +416,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Personel_arıza_bildirm";
             this.Text = "Personel_arıza_bildirm";
+            this.Load += new System.EventHandler(this.Personel_arıza_bildirm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
