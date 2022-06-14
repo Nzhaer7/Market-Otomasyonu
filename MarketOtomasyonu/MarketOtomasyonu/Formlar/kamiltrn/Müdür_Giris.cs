@@ -27,5 +27,11 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
             Formlar.kamiltrn.Şifre_unuttum_sayfası sifredegis2 = new Şifre_unuttum_sayfası();
             sifredegis2.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Formlar.kamiltrn.Mudur_Anasayfa müdürsayfa = new Mudur_Anasayfa();
+            müdürsayfa.Show();
+        }
     }
 }

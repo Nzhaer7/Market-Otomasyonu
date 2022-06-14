@@ -21,5 +21,16 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
             Formlar.kamiltrn.Malzeme_Guncelleme guncelle_ekle = new Malzeme_Guncelleme();
            guncelle_ekle.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Formlar.kamiltrn.Şifre_yenile sifreyenile = new Şifre_yenile();
+            sifreyenile.Show();
+        }
     }
 }
