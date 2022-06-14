@@ -69,6 +69,22 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
 
         private void button3_Click(object sender, EventArgs e)
         {
+            var yeniurun = new Classes.UrunDb()
+            {
+                adi = textBox1.Text,
+                durumu = numericUpDown1.Value,
+                girisTarihi = dateTimePicker1.Value,
+                fiyat = textBox3.Text,
+                sinifi = textBox4.Text,
+                kodu = textBox5.Text,
+                sonKullanimTarihi=dateTimePicker2.Value
+
+            };
+            dbContext.Urunler.Add(yeniurun);
+            int result = dbContext.SaveChanges();
+            string message = result > 0 ? "Urun Eklendi" : "Başarısız";
+            MessageBox.Show(message);
+            refreshurun();
         }
 
         private void button15_Click(object sender, EventArgs e)

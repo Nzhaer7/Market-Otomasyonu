@@ -30,9 +30,6 @@ namespace MarketOtomasyonu.Data
             modelBuilder.Entity<UrunDb>().Property(Urun => Urun.girisTarihi)
                                           .HasColumnName("Giriş Tarihi");
 
-            modelBuilder.Entity<UrunDb>().Property(Urun => Urun.cikisTarihi)
-                                          .HasColumnName("Çıkış Tarihi");
-
 			modelBuilder.Entity<UrunDb>().Property(Urun => Urun.kodu)
 										 .HasColumnName("Kodu")
 										  .HasMaxLength(30);
@@ -54,7 +51,7 @@ namespace MarketOtomasyonu.Data
 
 			DateTime dt = new DateTime(2022, 06, 10);
 
-			modelBuilder.Entity<UrunDb>().HasData(new UrunDb { id = 1, adi = "besir", girisTarihi = dt, cikisTarihi = dt, kodu = "1500abc", sonKullanimTarihi = dt, fiyat ="15,5",sinifi="gofret", durumu = 1 });
+			modelBuilder.Entity<UrunDb>().HasData(new UrunDb { id = 1, adi = "besir", girisTarihi = dt, kodu = "1500abc", sonKullanimTarihi = dt, fiyat ="15,5",sinifi="gofret", durumu = 1 });
 			
 
 

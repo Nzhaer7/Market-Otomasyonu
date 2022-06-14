@@ -15,7 +15,6 @@ namespace MarketOtomasyonu.Classes
         public string fiyat { get; set; }
         public decimal durumu { get; set; }
 		public DateTime girisTarihi { get; set; }
-		public DateTime cikisTarihi { get; set; }
 		public DateTime sonKullanimTarihi { get; set; }
 	}
 }

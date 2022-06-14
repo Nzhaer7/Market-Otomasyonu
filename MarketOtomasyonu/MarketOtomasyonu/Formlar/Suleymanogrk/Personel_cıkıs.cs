@@ -54,7 +54,16 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
 
         private void button1_Click(object sender, EventArgs e)
         {
- 
+            var personelcikis = new Classes.PersonelDb()
+            {
+                adi = textBox1.Text,               
+                cikisTarihi=dateTimePicker1.Value,
+            };
+            dbContext.Personeller.Add(personelcikis);
+            int result = dbContext.SaveChanges();
+            string message = result > 0 ? "Bilgiler Eklendi" : "Başarısız";
+            MessageBox.Show(message);
+            refreshpersonel();
         }
 
         private Data.MOContext dbContext;
