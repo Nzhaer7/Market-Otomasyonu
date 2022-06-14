@@ -96,5 +96,26 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
 
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            Classes.UrunDb urunDb = new Classes.UrunDb()
+            {
+                id = this.id,
+                adi = textBox1.Text,
+                durumu = numericUpDown1.Value,
+                girisTarihi = dateTimePicker1.Value,
+                fiyat = textBox3.Text,
+                kodu = textBox5.Text,
+                sinifi = textBox4.Text,
+                sonKullanimTarihi = dateTimePicker3.Value
+            };
+            dbContext = new Data.MOContext();
+            dbContext.Urunler.Update(urunDb);
+            int result = dbContext.SaveChanges();
+            string message = result > 0 ? "Urun Güncellendi" : "Başarısız";
+            MessageBox.Show(message);
+            refreshurun();
+        }
     }
 }

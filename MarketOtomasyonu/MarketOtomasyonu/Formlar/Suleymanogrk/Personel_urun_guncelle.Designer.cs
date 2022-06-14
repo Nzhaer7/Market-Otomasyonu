@@ -68,6 +68,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.button18 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -137,6 +138,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button18);
             this.tabPage2.Controls.Add(this.dateTimePicker3);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.dateTimePicker1);
@@ -166,7 +168,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(889, 439);
+            this.button4.Location = new System.Drawing.Point(817, 499);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(66, 29);
             this.button4.TabIndex = 14;
@@ -177,11 +179,11 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(743, 439);
+            this.button3.Location = new System.Drawing.Point(737, 440);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 29);
+            this.button3.Size = new System.Drawing.Size(96, 41);
             this.button3.TabIndex = 13;
-            this.button3.Text = "Ürün Değiştir";
+            this.button3.Text = "Ürün Bilgisi Getir";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -501,6 +503,17 @@
             this.dateTimePicker3.Size = new System.Drawing.Size(148, 20);
             this.dateTimePicker3.TabIndex = 19;
             // 
+            // button18
+            // 
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button18.Location = new System.Drawing.Point(869, 440);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(96, 41);
+            this.button18.TabIndex = 20;
+            this.button18.Text = "Ürün Güncelle";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
             // Personel_urun_guncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -567,5 +580,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button18;
     }
 }
