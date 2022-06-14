@@ -68,9 +68,18 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             Formlar.Suleymanogrk.Personel_sifre_yenileme personel_Sifre_Yenileme = new Personel_sifre_yenileme();
             personel_Sifre_Yenileme.Show();
         }
+        int id;
 
         private void button3_Click(object sender, EventArgs e)
         {
+            id = Convert.ToInt32(dataGridView2.Rows[dataGridView2.CurrentCell.RowIndex].Cells[0].Value);
+            textBox1.Text = dataGridView2.Rows[dataGridView2.CurrentCell.RowIndex].Cells[1].Value.ToString();
+            textBox5.Text = dataGridView2.Rows[dataGridView2.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            dateTimePicker1.Value = (DateTime)dataGridView2.Rows[dataGridView2.CurrentCell.RowIndex].Cells[6].Value;
+            textBox3.Text= dataGridView2.Rows[dataGridView2.CurrentCell.RowIndex].Cells[4].Value.ToString();
+            textBox4.Text = dataGridView2.Rows[dataGridView2.CurrentCell.RowIndex].Cells[3].Value.ToString();
+            numericUpDown1.Value= decimal.Parse(dataGridView2.Rows[dataGridView2.CurrentCell.RowIndex].Cells[5].Value.ToString());
+            dateTimePicker3.Value = (DateTime)dataGridView2.Rows[dataGridView2.CurrentCell.RowIndex].Cells[7].Value;
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
