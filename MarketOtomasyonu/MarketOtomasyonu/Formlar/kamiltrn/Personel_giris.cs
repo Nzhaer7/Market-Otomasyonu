@@ -22,5 +22,11 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
             Formlar.kamiltrn.Şifre_unuttum_sayfası sifreyenile = new Şifre_unuttum_sayfası();
             sifreyenile.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Formlar.Suleymanogrk.Personel personelanasayfa = new Suleymanogrk.Personel();
+            personelanasayfa.Show();
+        }
     }
 }
