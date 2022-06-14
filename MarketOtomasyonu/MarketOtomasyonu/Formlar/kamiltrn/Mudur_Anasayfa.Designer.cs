@@ -39,10 +39,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
@@ -107,6 +107,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(980, 519);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tabPage3
             // 
@@ -127,6 +128,7 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(980, 519);
             this.dataGridView2.TabIndex = 3;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // tabPage4
             // 
@@ -173,15 +175,25 @@
             this.tabPage5.Text = "Ayarlar";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // button5
             // 
-            this.button1.Location = new System.Drawing.Point(50, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 94);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Şifre Yenile";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button5.Location = new System.Drawing.Point(705, 183);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(160, 94);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "...";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.Location = new System.Drawing.Point(490, 183);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(160, 94);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "...";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -194,25 +206,15 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // button1
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(490, 183);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 94);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "...";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(705, 183);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 94);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "...";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(50, 183);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(160, 94);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Şifre Yenile";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Mudur_Anasayfa
             // 
@@ -222,6 +224,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Mudur_Anasayfa";
             this.Text = "Mudur_Anasayfa";
+            this.Load += new System.EventHandler(this.Mudur_Anasayfa_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
