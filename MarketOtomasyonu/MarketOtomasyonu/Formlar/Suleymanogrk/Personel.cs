@@ -109,5 +109,10 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             Formlar.Suleymanogrk.Personel_arıza_bildirm personel_Arıza_Bildirm = new Personel_arıza_bildirm();
             personel_Arıza_Bildirm.Show();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

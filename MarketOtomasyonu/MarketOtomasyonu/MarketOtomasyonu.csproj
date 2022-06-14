@@ -300,6 +300,12 @@
     <Compile Include="Formlar\Suleymanogrk\Personel_sepet_urun_ekle.Designer.cs">
       <DependentUpon>Personel_sepet_urun_ekle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_sifre_yenileme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Suleymanogrk\Personel_sifre_yenileme.Designer.cs">
+      <DependentUpon>Personel_sifre_yenileme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Suleymanogrk\Personel_urun_ekle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -397,6 +403,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_sepet_urun_ekle.resx">
       <DependentUpon>Personel_sepet_urun_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_sifre_yenileme.resx">
+      <DependentUpon>Personel_sifre_yenileme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Suleymanogrk\Personel_urun_ekle.resx">
       <DependentUpon>Personel_urun_ekle.cs</DependentUpon>
