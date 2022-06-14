@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace MarketOtomasyonu.Formlar.Suleymanogrk
 {
@@ -16,12 +17,26 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             InitializeComponent();
         }
-
+        private Data.MOContext dbContext;
         private void Personel_Load(object sender, EventArgs e)
         {
-
+            refreshpersonel();
+            refreshurun();
         }
-
+        public void refreshpersonel()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView1.DataSource = null;
+            var kisilerListesi = dbContext.Personeller.ToList();
+            dataGridView1.DataSource = kisilerListesi;
+        }
+        public void refreshurun()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView2.DataSource = null;
+            var kisilerListesi = dbContext.Urunler.ToList();
+            dataGridView2.DataSource = kisilerListesi;
+        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -115,5 +130,17 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             Formlar.Suleymanogrk.Personel_sifre_yenileme personel_Sifre_Yenileme = new Personel_sifre_yenileme();
             personel_Sifre_Yenileme.Show();
         }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void refresh(object sender, EventArgs e)
+        {
+            refreshpersonel();
+            refreshurun();
+        }
+
     }
 }

@@ -51,5 +51,25 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             Formlar.Suleymanogrk.Personel_sifre_yenileme personel_Sifre_Yenileme = new Personel_sifre_yenileme();
             personel_Sifre_Yenileme.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+ 
+        }
+
+        private Data.MOContext dbContext;
+
+        private void Personel_cıkıs_Load(object sender, EventArgs e)
+        {
+            refreshpersonel();
+        }
+
+        public void refreshpersonel()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView2.DataSource = null;
+            var kisilerListesi = dbContext.Personeller.ToList();
+            dataGridView2.DataSource = kisilerListesi;
+        }
     }
 }

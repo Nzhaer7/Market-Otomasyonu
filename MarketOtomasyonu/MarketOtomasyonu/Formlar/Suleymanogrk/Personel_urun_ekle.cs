@@ -21,10 +21,26 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
 
         }
-
+        private Data.MOContext dbContext;
         private void Personel_urun_ekle_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 1;
+            refreshpersonel();
+            refreshurun();
+        }
+        public void refreshpersonel()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView1.DataSource = null;
+            var kisilerListesi = dbContext.Personeller.ToList();
+            dataGridView1.DataSource = kisilerListesi;
+        }
+        public void refreshurun()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView2.DataSource = null;
+            var kisilerListesi = dbContext.Urunler.ToList();
+            dataGridView2.DataSource = kisilerListesi;
         }
 
         private void button9_Click(object sender, EventArgs e)

@@ -24,34 +24,37 @@ namespace MarketOtomasyonu.Data
 			/*urun tablosu olusturulması */
 
 			modelBuilder.Entity<UrunDb>().Property(Urun => Urun.adi)
-											  .HasColumnName("Adı")
-											  .IsRequired()
-											  .HasMaxLength(30);
-			modelBuilder.Entity<UrunDb>().Property(Urun => Urun.girisTarihi)
-										  .HasColumnName("Giriş Tarihi")
-										  .IsRequired();
-			modelBuilder.Entity<UrunDb>().Property(Urun => Urun.cikisTarihi)
-										  .HasColumnName("Çıkış Tarihi")
-										  .IsRequired();
+											.HasColumnName("Adı")
+										    .HasMaxLength(30);
+
+            modelBuilder.Entity<UrunDb>().Property(Urun => Urun.girisTarihi)
+                                          .HasColumnName("Giriş Tarihi");
+
+            modelBuilder.Entity<UrunDb>().Property(Urun => Urun.cikisTarihi)
+                                          .HasColumnName("Çıkış Tarihi");
+
 			modelBuilder.Entity<UrunDb>().Property(Urun => Urun.kodu)
 										 .HasColumnName("Kodu")
-										  .IsRequired()
 										  .HasMaxLength(30);
-			modelBuilder.Entity<UrunDb>().Property(Urun => Urun.sonKullanimTarihi)
-										 .HasColumnName("Son Kullanma Tarihi")
-										 .IsRequired();
+
+            modelBuilder.Entity<UrunDb>().Property(Urun => Urun.sonKullanimTarihi)
+                                         .HasColumnName("Son Kullanma Tarihi");
+
 			modelBuilder.Entity<UrunDb>().Property(Urun => Urun.fiyat)
 										 .HasColumnName("Fiyatı")
-										 .IsRequired()
 										 .HasMaxLength(30);
-			modelBuilder.Entity<UrunDb>().Property(Urun => Urun.durumu)
+
+            modelBuilder.Entity<UrunDb>().Property(Urun => Urun.sinifi)
+                                         .HasColumnName("Sınıfı")
+                                         .HasMaxLength(30);
+
+            modelBuilder.Entity<UrunDb>().Property(Urun => Urun.durumu)
 										 .HasColumnName("Stok Durumu")
-										 .IsRequired()
 										 .HasMaxLength(30);
 
 			DateTime dt = new DateTime(2022, 06, 10);
 
-			modelBuilder.Entity<UrunDb>().HasData(new UrunDb { id = 1, adi = "besir", girisTarihi = dt, cikisTarihi = dt, kodu = "1500abc", sonKullanimTarihi = dt, fiyat =14.50f, durumu = 1 });
+			modelBuilder.Entity<UrunDb>().HasData(new UrunDb { id = 1, adi = "besir", girisTarihi = dt, cikisTarihi = dt, kodu = "1500abc", sonKullanimTarihi = dt, fiyat ="15,5",sinifi="gofret", durumu = 1 });
 			
 
 
@@ -60,29 +63,28 @@ namespace MarketOtomasyonu.Data
 
 			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.adi)
 											  .HasColumnName("Adı")
-											  .IsRequired()
 											  .HasMaxLength(30);
-			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.girisTarihi)
-											  .HasColumnName("Giriş Tarihi")
-											  .IsRequired();
-			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.cikisTarihi)
-											  .HasColumnName("Çıkış Tarihi")
-											  .IsRequired();
-			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.maas)
+
+            modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.girisTarihi)
+                                              .HasColumnName("Giriş Tarihi");
+
+            modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.cikisTarihi)
+                                              .HasColumnName("Çıkış Tarihi");
+
+            modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.maas)
 											 .HasColumnName("Maaş")
-									         .IsRequired()
 									         .HasMaxLength(30);
+
 			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.gorev)
 											 .HasColumnName("Görevi")
-											 .IsRequired()
 											 .HasMaxLength(30);
+
 			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.durumu)
 											.HasColumnName("izin Durumu")
-										    .IsRequired()
 										    .HasMaxLength(30);
+
 			modelBuilder.Entity<PersonelDb>().Property(Personel => Personel.girisid)
 											.HasColumnName("Kullanıcı adı")
-											.IsRequired()
 											.HasMaxLength(30);
 
 			modelBuilder.Entity<PersonelDb>().HasData(new PersonelDb { id = 1, adi = "kamil", girisTarihi = dt, cikisTarihi = dt, maas = 2750.75f, gorev = "kasiyer", girisid = "kartal123", durumu = "izinli" });
@@ -91,57 +93,50 @@ namespace MarketOtomasyonu.Data
 
 			modelBuilder.Entity<malzemeDb>().Property(malzeme => malzeme.durumu)
 											.HasColumnName("Malzeme Durumu")
-											.IsRequired()
 											.HasMaxLength(30);
+
 			modelBuilder.Entity<malzemeDb>().Property(malzeme => malzeme.turu)
 											.HasColumnName("Malzeme turu")
-											.IsRequired()
 											.HasMaxLength(30);
+
 			modelBuilder.Entity<malzemeDb>().Property(malzeme => malzeme.adedi)
 											.HasColumnName("Malzeme Adedi")
-											.IsRequired()
 											.HasMaxLength(30);
+
 			modelBuilder.Entity<malzemeDb>().Property(malzeme => malzeme.personelid)
 											.HasColumnName("Bildiren Personel :")
-											.IsRequired()
 											.HasMaxLength(30);
 
 			modelBuilder.Entity<malzemeDb>().HasData(new malzemeDb { id = 1, durumu = "sağlam", turu = "dolap", adedi = 5, personelid="feyyaz" });
 
-			/*musteri sepet oluşturulması*/
+            /*musteri sepet oluşturulması*/
 
 
-			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.adedi)
-											.HasColumnName("Ürün Adedi :")
-											.IsRequired();
+            modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.adedi)
+                                            .HasColumnName("Ürün Adedi :");
 											
 			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.adi)
 											.HasColumnName("Ürün Adı :")
-											.IsRequired()
 											.HasMaxLength(30);
+
 			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.fiyat)
 										.HasColumnName("Ürün fiyatı :")
-										.IsRequired()
 										.HasMaxLength(30);
-			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.toplam)
-										.HasColumnName("Sepet Toplam   :")
-										.IsRequired();
 
-			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.giderid)
-										.HasColumnName("Gider id :")
-										.IsRequired();
+            modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.toplam)
+                                        .HasColumnName("Sepet Toplam   :");
 
-			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.gelirid)
-										.HasColumnName("Gelir id :")
-										.IsRequired();
+            modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.giderid)
+                                        .HasColumnName("Gider id :");
 
-			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.urunid)
-										.HasColumnName("Ürün id :")
-										.IsRequired();
+            modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.gelirid)
+                                        .HasColumnName("Gelir id :");
+
+            modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.urunid)
+                                        .HasColumnName("Ürün id :");
 
 			modelBuilder.Entity<musteriSepetDb>().Property(musteriSepet => musteriSepet.urunKodu)
 										.HasColumnName("Ürün Kodu :")
-										.IsRequired()
 										.HasMaxLength(30);
 
 			modelBuilder.Entity<musteriSepetDb>().HasData(new musteriSepetDb { id = 1, adedi = 5, adi = "goflet", fiyat = 2.75f,giderid="asas",gelirid="safas",urunid="atıştırmalık" ,urunKodu="356asd"});

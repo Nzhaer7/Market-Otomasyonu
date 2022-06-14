@@ -99,6 +99,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(696, 549);
             this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // button2
             // 
@@ -366,6 +367,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Personel";
             this.Text = "Personel";
+            this.Activated += new System.EventHandler(this.refresh);
             this.Load += new System.EventHandler(this.Personel_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
