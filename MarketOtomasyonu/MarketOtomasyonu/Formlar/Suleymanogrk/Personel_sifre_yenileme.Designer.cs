@@ -370,6 +370,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Personel_sifre_yenileme";
             this.Text = "Personel_sifre_yenileme";
+            this.Load += new System.EventHandler(this.Personel_sifre_yenileme_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

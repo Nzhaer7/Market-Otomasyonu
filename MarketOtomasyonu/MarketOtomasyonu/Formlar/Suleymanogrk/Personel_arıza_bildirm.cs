@@ -21,5 +21,11 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             tabControl1.SelectedIndex = 4;
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            Formlar.Suleymanogrk.Personel_sifre_yenileme personel_Sifre_Yenileme = new Personel_sifre_yenileme();
+            personel_Sifre_Yenileme.Show();
+        }
     }
 }

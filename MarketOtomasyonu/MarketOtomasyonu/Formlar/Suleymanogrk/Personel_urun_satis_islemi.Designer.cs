@@ -395,6 +395,7 @@
             this.button15.TabIndex = 3;
             this.button15.Text = "Şifre Yenileme";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // Personel_urun_satis_islemi
             // 

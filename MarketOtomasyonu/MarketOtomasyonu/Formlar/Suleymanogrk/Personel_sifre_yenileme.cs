@@ -16,5 +16,10 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             InitializeComponent();
         }
+
+        private void Personel_sifre_yenileme_Load(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 5;
+        }
     }
 }

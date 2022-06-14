@@ -41,7 +41,7 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
         {
             refreshPersonel();
             refreshUrun();
-            refreshCiroTakip();
+            //refreshCiroTakip();
             refreshMalzemeTakip();
         }
 
