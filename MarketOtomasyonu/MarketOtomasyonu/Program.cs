@@ -21,8 +21,8 @@ namespace MarketOtomasyonu
 			MOContext MODB = new MOContext();
 			MODB.Database.EnsureDeleted();
 			MODB.Database.EnsureCreated();
-			Application.Run(new Formlar.Suleymanogrk.Personel());
-			//Application.Run(new Formlar.kamiltrn.Giris_Yap());
+			//Application.Run(new Formlar.Suleymanogrk.Personel());
+			Application.Run(new Formlar.kamiltrn.Giris_Yap());
 			//Application.Run(new Formlar.besir.kaydol());
         }
     }
