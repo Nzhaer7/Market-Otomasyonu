@@ -162,7 +162,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\KullaniciDb.cs" />
     <Compile Include="Classes\malzemeDb.cs" />
+    <Compile Include="Classes\MarketCiroDb.cs" />
     <Compile Include="Classes\musteriSepetDb.cs" />
     <Compile Include="Classes\PersonelDb.cs" />
     <Compile Include="Classes\UrunDb.cs" />

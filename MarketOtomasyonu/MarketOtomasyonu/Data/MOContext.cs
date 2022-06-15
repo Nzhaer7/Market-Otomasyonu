@@ -13,7 +13,8 @@ namespace MarketOtomasyonu.Data
 		public DbSet<UrunDb> Urunler { get; set; }
 		public DbSet<PersonelDb> Personeller { get; set; }
 		public DbSet<malzemeDb> Malzemeler { get; set; }
-
+		public DbSet<KullaniciDb> Kullanici { get; set; }
+		public DbSet<MarketCiroDb> Ciro { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
@@ -142,8 +143,37 @@ namespace MarketOtomasyonu.Data
 										.HasColumnName("Ürün Kodu :")
 										.HasMaxLength(30);
 
-			modelBuilder.Entity<musteriSepetDb>().HasData(new musteriSepetDb { id = 1, adedi = 5, adi = "goflet", fiyat = 2.75f,giderid="asas",gelirid="safas",urunid="atıştırmalık" ,urunKodu="356asd"});
+			modelBuilder.Entity<musteriSepetDb>().HasData(new musteriSepetDb { id = 1, adedi = 5, adi = "goflet", fiyat = 2.75f, giderid = "asas", gelirid = "safas", urunid = "atıştırmalık", urunKodu = "356asd" });
 
+			/*Kullanici oluşturulması*/
+
+			modelBuilder.Entity<KullaniciDb>().Property(Kullanici => Kullanici.kullaniciAdi)
+										.HasColumnName("Kullanıcı Adı :")
+										.HasMaxLength(30);
+
+			modelBuilder.Entity<KullaniciDb>().Property(Kullanici => Kullanici.mail)
+										   .HasColumnName("Mail :")
+												.HasMaxLength(30);
+		
+			modelBuilder.Entity<KullaniciDb>().Property(Kullanici => Kullanici.sifre)
+											.HasColumnName("sifre :")
+											.HasMaxLength(30);
+
+			modelBuilder.Entity<KullaniciDb>().HasData(new KullaniciDb { id = 1, kullaniciAdi ="deneme", mail = "deneme@mail", sifre = "Deneme123." });
+
+
+			/*ciro oluşturulması*/
+
+			modelBuilder.Entity<MarketCiroDb>().Property(Ciro => Ciro.gider)
+											.HasColumnName("Haftalık Gider :")
+											.HasMaxLength(30);
+			modelBuilder.Entity<MarketCiroDb>().Property(Ciro => Ciro.gelir)
+											.HasColumnName("Haftalık Gelir :")
+											.HasMaxLength(30);
+			modelBuilder.Entity<MarketCiroDb>().Property(Ciro => Ciro.ciro)
+											.HasColumnName("Haftalık Ciro :")
+											.HasMaxLength(30);
+			modelBuilder.Entity<MarketCiroDb>().HasData(new MarketCiroDb { id = 1, gider = "0", gelir = "0", ciro = "0" });
 		}
 	}
 }
