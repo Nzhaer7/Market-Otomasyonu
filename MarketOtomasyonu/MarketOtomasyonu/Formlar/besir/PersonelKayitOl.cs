@@ -32,7 +32,22 @@ namespace MarketOtomasyonu.Formlar.besir
 
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+        private Data.MOContext dbContext;
+        private void PersonelKayitOl_Load(object sender, EventArgs e)
+        {
+            refreshkullanici();
+        }
+        public void refreshkullanici()
+        {
+            dbContext = new Data.MOContext();
+            var kullaniciListesi = dbContext.Kullanici.ToList();
+
+        }
+
+
+
+
+        private void button1_Click(object sender, EventArgs e)
 		{
 			
 			bool check = true;
@@ -95,6 +110,21 @@ namespace MarketOtomasyonu.Formlar.besir
 				MessageBox.Show("Sifre kurallara uygun degil lutfen yeniden yaziniz");
 				check = false;
 			}
+
+            var kullanici = new Classes.KullaniciDb()
+            {
+                kullaniciAdi = textBox3.Text,
+                mail = textBox4.Text,
+                sifre = textBox5.Text,
+            };
+            dbContext = new Data.MOContext();
+            dbContext.Kullanici.Add(kullanici);
+            int result = dbContext.SaveChanges();
+            string message = result > 0 ? "Bilgiler Eklendi" : "Başarısız";
+            MessageBox.Show(message);
+            refreshkullanici();
+
+            Close();
 		}
 	}
 }
