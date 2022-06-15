@@ -22,6 +22,15 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         private void Personel_gun_sonu_kasa_ozeti_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 2;
+            refreshciro();
+        }
+
+        public void refreshciro()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView3.DataSource = null;
+            var ciro = dbContext.Ciro.ToList();
+            dataGridView3.DataSource = ciro;
         }
 
         private void button9_Click(object sender, EventArgs e)

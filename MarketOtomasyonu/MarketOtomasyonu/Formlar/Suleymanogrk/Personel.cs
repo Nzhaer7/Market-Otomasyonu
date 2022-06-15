@@ -18,6 +18,7 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             InitializeComponent();
         }
         private Data.MOContext dbContext;
+
         private void Personel_Load(object sender, EventArgs e)
         {
             refreshpersonel();

@@ -17,14 +17,35 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             InitializeComponent();
         }
 
+        private Data.MOContext dbContext;
+
         private void Personel_sepet_urun_ekle_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 2;
+            refreshurun();
+        }
+
+        public void refreshurun()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView3.DataSource = null;
+            var kisilerListesi = dbContext.Urunler.ToList();
+            dataGridView3.DataSource = kisilerListesi;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            var urunekle = new Classes.UrunDb()
+            {
+                adi=textBox1.Text,
+                kodu=textBox3.Text,
+                durumu=numericUpDown1.Value
+            };
+            dbContext.Urunler.Add(urunekle);
+            int result = dbContext.SaveChanges();
+            string message = result > 0 ? "Bilgiler Eklendi" : "Başarısız";
+            MessageBox.Show(message);
+            refreshurun();
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -55,6 +76,11 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             Formlar.Suleymanogrk.Personel_sifre_yenileme personel_Sifre_Yenileme = new Personel_sifre_yenileme();
             personel_Sifre_Yenileme.Show();
+        }
+
+        private void refresh(object sender, EventArgs e)
+        {
+            refreshurun();
         }
     }
 }

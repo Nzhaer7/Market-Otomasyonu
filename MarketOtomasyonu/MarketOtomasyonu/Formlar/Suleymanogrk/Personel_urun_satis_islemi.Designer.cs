@@ -405,6 +405,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Personel_urun_satis_islemi";
             this.Text = "Personel_urun_satis_islemi";
+            this.Activated += new System.EventHandler(this.refresh);
             this.Load += new System.EventHandler(this.Personel_urun_satis_islemi_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

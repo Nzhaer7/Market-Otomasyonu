@@ -23,9 +23,20 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             personel_Sepet_Urun_Ekle.Show();
         }
 
+        private Data.MOContext dbContext;
+
         private void Personel_urun_satis_islemi_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 2;
+            refreshurun();
+        }
+
+        public void refreshurun()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView3.DataSource = null;
+            var kisilerListesi = dbContext.Urunler.ToList();
+            dataGridView3.DataSource = kisilerListesi;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -68,6 +79,11 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             Formlar.Suleymanogrk.Personel_sifre_yenileme personel_Sifre_Yenileme = new Personel_sifre_yenileme();
             personel_Sifre_Yenileme.Show();
+        }
+
+        private void refresh(object sender, EventArgs e)
+        {
+            refreshurun();
         }
     }
 }

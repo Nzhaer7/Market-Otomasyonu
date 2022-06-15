@@ -22,9 +22,20 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
 
         }
 
+        private Data.MOContext dbContext;
+
         private void Personel_urun_iptal_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 2;
+            refreshurun();
+        }
+
+        public void refreshurun()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView3.DataSource = null;
+            var kisilerListesi = dbContext.Urunler.ToList();
+            dataGridView3.DataSource = kisilerListesi;
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -55,6 +66,39 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             Formlar.Suleymanogrk.Personel_sifre_yenileme personel_Sifre_Yenileme = new Personel_sifre_yenileme();
             personel_Sifre_Yenileme.Show();
+        }
+
+        int id;
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            id = Convert.ToInt32(dataGridView3.Rows[dataGridView3.CurrentCell.RowIndex].Cells[0].Value);
+            textBox1.Text = dataGridView3.Rows[dataGridView3.CurrentCell.RowIndex].Cells[1].Value.ToString();
+            textBox2.Text= dataGridView3.Rows[dataGridView3.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            numericUpDown1.Value = decimal.Parse(dataGridView3.Rows[dataGridView3.CurrentCell.RowIndex].Cells[5].Value.ToString());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Classes.UrunDb urunDb = new Classes.UrunDb()
+            {
+                id = this.id,
+                adi = textBox1.Text,
+                kodu = textBox2.Text,
+                durumu = numericUpDown1.Value
+
+            };
+            dbContext = new Data.MOContext();
+            dbContext.Urunler.Remove(urunDb);
+            int result = dbContext.SaveChanges();
+            string message = result > 0 ? "Urun Silindi" : "Başarısız";
+            MessageBox.Show(message);
+            refreshurun();
         }
     }
 }
