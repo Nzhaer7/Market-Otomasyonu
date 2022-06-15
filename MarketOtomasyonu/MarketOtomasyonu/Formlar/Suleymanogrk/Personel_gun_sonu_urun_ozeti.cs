@@ -16,12 +16,20 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
         {
             InitializeComponent();
         }
+        private Data.MOContext dbContext;
 
         private void Personel_gun_sonu_urun_ozeti_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 2;
+            refreshurun();
         }
-
+        public void refreshurun()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView3.DataSource = null;
+            var kisilerListesi = dbContext.Urunler.ToList();
+            dataGridView3.DataSource = kisilerListesi;
+        }
         private void button9_Click(object sender, EventArgs e)
         {
             Formlar.Suleymanogrk.Personel_indirime_girecek_urunler personel_İndirime_Girecek_Urunler = new Personel_indirime_girecek_urunler();

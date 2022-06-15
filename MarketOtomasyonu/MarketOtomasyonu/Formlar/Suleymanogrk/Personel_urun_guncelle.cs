@@ -124,7 +124,8 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
                 fiyat = textBox3.Text,
                 kodu = textBox5.Text,
                 sinifi = textBox4.Text,
-                sonKullanimTarihi = dateTimePicker3.Value
+                sonKullanimTarihi = dateTimePicker3.Value,
+                cikisTarihi=dateTimePicker2.Value
             };
             dbContext = new Data.MOContext();
             dbContext.Urunler.Update(urunDb);

@@ -17,6 +17,8 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             InitializeComponent();
         }
 
+        private Data.MOContext dbContext;
+
         private void Personel_gun_sonu_kasa_ozeti_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 2;

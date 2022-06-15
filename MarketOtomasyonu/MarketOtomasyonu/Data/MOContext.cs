@@ -34,6 +34,10 @@ namespace MarketOtomasyonu.Data
 										 .HasColumnName("Kodu")
 										  .HasMaxLength(30);
 
+
+            modelBuilder.Entity<UrunDb>().Property(Urun => Urun.cikisTarihi)
+                                          .HasColumnName("Çıkış Tarihi");
+
             modelBuilder.Entity<UrunDb>().Property(Urun => Urun.sonKullanimTarihi)
                                          .HasColumnName("Son Kullanma Tarihi");
 
@@ -50,8 +54,10 @@ namespace MarketOtomasyonu.Data
 										 .HasMaxLength(30);
 
 			DateTime dt = new DateTime(2022, 06, 10);
+            DateTime dt2 = new DateTime(2022, 06, 18);
+            DateTime dt3 = new DateTime(2023, 06, 18);
 
-			modelBuilder.Entity<UrunDb>().HasData(new UrunDb { id = 1, adi = "besir", girisTarihi = dt, kodu = "1500abc", sonKullanimTarihi = dt, fiyat ="15,5",sinifi="gofret", durumu = 1 });
+			modelBuilder.Entity<UrunDb>().HasData(new UrunDb { id = 1, adi = "dido", girisTarihi = dt,cikisTarihi=dt2, kodu = "1500abc", sonKullanimTarihi = dt3, fiyat ="15,5",sinifi="gofret", durumu = 1 });
 			
 
 
@@ -84,7 +90,7 @@ namespace MarketOtomasyonu.Data
 											.HasColumnName("Kullanıcı adı")
 											.HasMaxLength(30);
 
-			modelBuilder.Entity<PersonelDb>().HasData(new PersonelDb { id = 1, adi = "kamil", girisTarihi = dt, cikisTarihi = dt, maas = 2750.75f, gorev = "kasiyer", girisid = "kartal123", durumu = "izinli" });
+			modelBuilder.Entity<PersonelDb>().HasData(new PersonelDb { id = 1, adi = "kamil", girisTarihi = dt, cikisTarihi = dt2, maas = 2750.75f, gorev = "kasiyer", girisid = "kartal123", durumu = "izinli" });
 			/*malzeme tablosu olusturulması */
 
 
