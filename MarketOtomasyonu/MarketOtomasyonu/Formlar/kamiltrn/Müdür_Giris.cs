@@ -30,8 +30,19 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Formlar.kamiltrn.Mudur_Anasayfa müdürsayfa = new Mudur_Anasayfa();
-            müdürsayfa.Show();
+            var dbContext = new Data.MOContext();
+            var kullanicilar = dbContext.Kullanici.ToList();
+            foreach (var item in kullanicilar)
+            {
+                if (item.kullaniciAdi == textBox1.Text && item.sifre == textBox2.Text)
+                {
+                    Formlar.kamiltrn.Mudur_Anasayfa müdürsayfa = new Mudur_Anasayfa();
+                    müdürsayfa.Show();
+                    return;
+                }
+        
+            }
+            MessageBox.Show("Hatalı Bilgi Girdiniz!!!");
         }
     }
 }

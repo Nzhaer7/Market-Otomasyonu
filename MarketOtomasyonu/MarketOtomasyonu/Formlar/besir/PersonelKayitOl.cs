@@ -81,8 +81,7 @@ namespace MarketOtomasyonu.Formlar.besir
 			if (emailKontrol.IsMatch(textBox4.Text))
 			{
 				mail = textBox4.Text;
-				Formlar.besir.GenelMailOnayla genelMailOnayla = new GenelMailOnayla();
-				genelMailOnayla.Show();
+			
 			}
 
 			else
@@ -121,10 +120,20 @@ namespace MarketOtomasyonu.Formlar.besir
             dbContext.Kullanici.Add(kullanici);
             int result = dbContext.SaveChanges();
             string message = result > 0 ? "Bilgiler Eklendi" : "Başarısız";
-            MessageBox.Show(message);
-            refreshkullanici();
 
-            Close();
-		}
+            if (check)
+            {
+                MessageBox.Show(message);
+                Formlar.kamiltrn.Giris_Yap giris_Yap = new kamiltrn.Giris_Yap();
+                giris_Yap.Show();
+                Close();
+            }
+            else
+            {
+                message = "Başarısız";
+                MessageBox.Show(message);
+
+            }
+        }
 	}
 }
