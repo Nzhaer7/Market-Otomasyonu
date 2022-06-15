@@ -18,10 +18,18 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
         }
 
 
-
+        private Data.MOContext dbContext;
         private void Malzeme_Guncelleme_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 3;
+            refreshmalzeme();
+        }
+        public void refreshmalzeme()
+        {
+            dbContext = new Data.MOContext();
+            dataGridView3.DataSource = null;
+            var malzemelerListesi = dbContext.Malzemeler.ToList();
+            dataGridView3.DataSource = malzemelerListesi;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,9 +42,23 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
 
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
-
+           
+            var malzemeekle = new Classes.malzemeDb()
+            {
+                durumu = textBox5.Text,
+                turu = textBox1.Text,
+                adedi = numericUpDown1.Value,
+                bildiren = textBox4.Text,
+            };
+            dbContext.Malzemeler.Add(malzemeekle);
+            int result = dbContext.SaveChanges();
+            string message = result > 0 ? "Bilgiler Eklendi" : "Başarısız";
+            MessageBox.Show(message);
+            refreshmalzeme();
+           
         }
 
         private void label4_Click(object sender, EventArgs e)

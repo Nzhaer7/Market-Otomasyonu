@@ -106,11 +106,11 @@ namespace MarketOtomasyonu.Data
 											.HasColumnName("Malzeme Adedi")
 											.HasMaxLength(30);
 
-			modelBuilder.Entity<malzemeDb>().Property(malzeme => malzeme.personelid)
+			modelBuilder.Entity<malzemeDb>().Property(malzeme => malzeme.bildiren)
 											.HasColumnName("Bildiren Personel :")
 											.HasMaxLength(30);
 
-			modelBuilder.Entity<malzemeDb>().HasData(new malzemeDb { id = 1, durumu = "sağlam", turu = "dolap", adedi = 5, personelid="feyyaz" });
+			modelBuilder.Entity<malzemeDb>().HasData(new malzemeDb { id = 1, durumu = "sağlam", turu = "dolap", adedi = 5, bildiren="feyyaz" });
 
             /*musteri sepet oluşturulması*/
 

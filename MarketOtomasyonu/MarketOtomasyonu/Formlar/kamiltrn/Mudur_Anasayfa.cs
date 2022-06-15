@@ -88,7 +88,7 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
 
             dbContext = new Data.MOContext();
             dataGridView3.DataSource = null;
-            var MalzemeListesi = dbContext.Personeller.ToList();
+            var MalzemeListesi = dbContext.Malzemeler.ToList();
             dataGridView3.DataSource = MalzemeListesi;
 
 
@@ -108,6 +108,11 @@ namespace MarketOtomasyonu.Formlar.kamiltrn
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void refresh(object sender, EventArgs e)
+        {
+            refreshMalzemeTakip();
         }
     }
 

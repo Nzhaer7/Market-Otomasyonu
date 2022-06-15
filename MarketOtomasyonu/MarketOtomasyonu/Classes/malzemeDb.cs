@@ -11,7 +11,7 @@ namespace MarketOtomasyonu.Classes
 		public int id { get; set; }
 		public string durumu { get; set; }
 		public string turu { get; set; }
-		public int adedi { get; set; }
-		public string personelid { get; set; }
+		public decimal adedi { get; set; }
+		public string bildiren { get; set; }
 	}
 }
