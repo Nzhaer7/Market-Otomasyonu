@@ -40,6 +40,7 @@ namespace MarketOtomasyonu.Formlar.besir
 
 		private void button1_Click(object sender, EventArgs e)
 		{
+			
 			bool check = true;
 			if (kullaniciAdiKontrol.IsMatch(textBox1.Text))
 			{
@@ -71,6 +72,8 @@ namespace MarketOtomasyonu.Formlar.besir
 			if (emailKontrol.IsMatch(textBox4.Text))
 			{
 				mail = textBox4.Text;
+				Formlar.besir.GenelMailOnayla genelMailOnayla = new GenelMailOnayla();
+				genelMailOnayla.Show();
 			}
 
 			else
