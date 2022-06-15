@@ -98,6 +98,7 @@ namespace MarketOtomasyonu.Formlar.besir
 				MessageBox.Show("Sifre kurallara uygun degil lutfen yeniden yaziniz");
 				check = false;
 			}
+			Close();
 		}
 
 		private void textBox1_TextChanged(object sender, EventArgs e)

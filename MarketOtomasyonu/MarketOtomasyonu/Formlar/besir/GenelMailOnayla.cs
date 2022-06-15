@@ -24,7 +24,9 @@ namespace MarketOtomasyonu.Formlar.besir
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-
+			Formlar.kamiltrn.Giris_Yap giris_Yap = new kamiltrn.Giris_Yap();
+			giris_Yap.Show();
+			Close();
 		}
 	}
 }
