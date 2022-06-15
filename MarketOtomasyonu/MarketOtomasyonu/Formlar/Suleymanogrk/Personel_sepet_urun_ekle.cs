@@ -46,6 +46,7 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             string message = result > 0 ? "Bilgiler Eklendi" : "Başarısız";
             MessageBox.Show(message);
             refreshurun();
+            Close();
         }
 
         private void button9_Click(object sender, EventArgs e)

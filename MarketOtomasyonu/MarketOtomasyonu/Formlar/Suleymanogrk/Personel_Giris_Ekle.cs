@@ -73,6 +73,7 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             string message = result > 0 ? "Bilgiler Eklendi" : "Başarısız";
             MessageBox.Show(message);
             refreshpersonel();
+            Close();
         }
 
     }

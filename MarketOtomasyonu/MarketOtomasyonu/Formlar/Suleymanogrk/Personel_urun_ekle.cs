@@ -85,6 +85,7 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             string message = result > 0 ? "Urun Eklendi" : "Başarısız";
             MessageBox.Show(message);
             refreshurun();
+            Close();
         }
 
         private void button15_Click(object sender, EventArgs e)

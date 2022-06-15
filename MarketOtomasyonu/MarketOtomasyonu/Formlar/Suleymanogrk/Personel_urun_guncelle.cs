@@ -106,6 +106,7 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             string message = result > 0 ? "Urun Silindi" : "Başarısız";
             MessageBox.Show(message);
             refreshurun();
+            Close();
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -133,6 +134,7 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             string message = result > 0 ? "Urun Güncellendi" : "Başarısız";
             MessageBox.Show(message);
             refreshurun();
+            Close();
         }
     }
 }

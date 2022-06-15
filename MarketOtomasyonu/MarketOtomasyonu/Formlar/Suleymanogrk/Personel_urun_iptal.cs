@@ -99,6 +99,7 @@ namespace MarketOtomasyonu.Formlar.Suleymanogrk
             string message = result > 0 ? "Urun Silindi" : "Başarısız";
             MessageBox.Show(message);
             refreshurun();
+            Close();
         }
     }
 }
